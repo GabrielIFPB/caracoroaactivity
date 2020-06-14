@@ -27,11 +27,10 @@ public class DetailActivity extends Activity {
 
         int num = extra.getInt("num", -1);
 
-        if(num == 0){
+        if(num == 0)
             this.moeda.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.moeda_cara));
-        }else{
+        else
             this.moeda.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.moeda_coroa));
-        }
 
         this.voltar.setOnClickListener(new View.OnClickListener() {
             @Override
